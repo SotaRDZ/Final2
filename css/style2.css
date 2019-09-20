@@ -94,21 +94,16 @@ header {
     font-size: 15px;
     align-items: right;
     text-transform: uppercase;
+}
 
-
+.navBar {
+    grid-column: span 5;
 }
 
 
 .logo {
-    margin-left: 1em;
-    margin-bottom: 1.5em;
-    align-items: center;
-    text-decoration: none;
-    margin-left: 3em;
-    align-items: center;
-    width: 20%;
+    grid-column: span 3;
 }
-
 
 p {
     margin-bottom: 1em;
@@ -159,6 +154,7 @@ h4 {
     letter-spacing: .3em;
     color: #ff5972;
     margin-left: 1em;
+    margin-bottom: -.5em;
     text-align: center;
     font-weight: 300;
 }
@@ -168,27 +164,84 @@ h4 {
 
 .galleryBlock{
     grid-column: span 2;
+    padding: 4em;
     background-color: #002651;
     margin-bottom: 4em;
     padding: 1em;
     text-align: center;
+    margin-top: 3em;
 }
 
 .galleryBlock2{
     grid-column: span 4;
+    padding: 4em;
     background-color: #002651;
     margin-bottom: 4em;
     padding: 1em;
     text-align: center;
+    margin-top: 3em;
+
 }
 
 .contactUs{
     color: aliceblue;
 }
 
+.icon2{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
 .icon{
     width: 30px;
     height: 30px;
-    margin: 0 48%;
-    margin-top: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: -1em;
+
 }
+
+a{
+    text-decoration: none;
+}
+
+
+/* /////////////// */
+
+
+.footer {
+    background-color: #ff304f; 
+    grid-column: span 12;        
+}
+
+h5{
+    text-align: center;
+    font-size: .75em;
+    color: aliceblue;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+/* /////////////// */
+
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+
+    }
