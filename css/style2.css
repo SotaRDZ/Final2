@@ -69,28 +69,37 @@ header {
     margin-bottom: 1em;
 }
 
+.topnav{
+    margin-right: -15em;
+    margin-top: 1em;
+
+
+}
+
 .topnav a {
-    display: flex;
     float: right;
     color: #ff5972;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    align-items: center;
+    font-size: 15px;
+    align-items: right;
+    text-transform: uppercase;
+
 
 }
 
 
 .logo {
     margin-left: 1em;
+    margin-bottom: 1em;
     align-items: center;
     text-decoration: none;
-    width: 25%;
+    width: 15%;
 }
 
 .logo-img {
     margin-left: 3em;
+    align-items: center;
     height: 30px;
 }
 
