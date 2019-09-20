@@ -7,6 +7,20 @@
         grid-row-gap: 1em;
     }
 
+
+    .galleryText1 {
+        margin-left: 2em;
+        grid-column: span 12;
+    }
+    .galleryText2 {
+        margin-left: 2em;
+        grid-column: span 6;
+    }
+
+    .galleryText3 {
+        margin-left: 2em;
+        grid-column: span 6;
+    }
     .galleryItem1 {
         margin: 2em;
         grid-column: span 12;
@@ -62,7 +76,6 @@ header {
 
 .logo {
     margin-left: 1em;
-    display: flex;
     align-items: center;
     text-decoration: none;
     width: 25%;
