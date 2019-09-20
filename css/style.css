@@ -75,11 +75,6 @@ header {
   line-height: 1.5em;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: .3em;
-  color: #ff304f;
-}
 
 p {
   margin-bottom: 1em;
@@ -100,8 +95,14 @@ h1 {
   color: #E69BF9;
   margin-left: 1em;
   margin-top: -1.4em;
-
 }
+
+h2 {
+  font-size: 2em;
+  margin-bottom: .3em;
+  color: #ff304f;
+}
+
 
 h3 {
     font-family: 'Segoe UI';
