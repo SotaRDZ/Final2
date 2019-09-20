@@ -41,30 +41,37 @@ header {
     margin-bottom: 1em;
 }
 
-.topnav a {
+.topnav{
     display: flex;
-    float: right;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.topnav a {
     color: #ff5972;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 10px;
     text-decoration: none;
     font-size: 17px;
 }
-
 
 .logo {
     margin-left: 1em;
     align-items: center;
     text-decoration: none;
-    width: 25%;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
 }
 
 .logo-img {
     margin-left: 3em;
     height: 30px;
+    max-width: 100%;
 }
 
 p {
+    margin-top: 0;
     margin-bottom: 1em;
     line-height: 1.5em;
 }
@@ -105,6 +112,27 @@ h3 {
 
 
 @media (min-width: 48em) {
+
+
+    .topnav a {
+        display: flex;
+        float: right;
+        color: #ff5972;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+
+    .logo {
+        margin-left: 1em;
+        align-items: center;
+        text-decoration: none;
+        width: 25%;
+    }
+
+
     .gallery {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
