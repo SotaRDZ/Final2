@@ -49,6 +49,17 @@ header {
     margin-bottom: 1em;
 }
 
+.topnav a {
+    display: flex;
+    float: right;
+    color: #ff5972;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
 .logo {
     margin-left: 1em;
     display: flex;
