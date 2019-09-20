@@ -2,49 +2,27 @@
 
 .gallery {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 1em;
         grid-row-gap: 1em;
+        width: 100%;
     }
 
-
-    .galleryText1 {
-        margin-left: 2em;
-        grid-column: span 12;
-    }
-    .galleryText2 {
-        margin-left: 2em;
-        grid-column: span 6;
-    }
-
+    .galleryText1,
+    .galleryText2,
     .galleryText3 {
         margin-left: 2em;
-        grid-column: span 6;
-    }
-    .galleryItem1 {
-        margin: 2em;
-        grid-column: span 12;
+        grid-column: span 4;
     }
 
-    .galleryItem2 {
-        grid-column: span 3;
-    }
 
-    .galleryItem3{
-        grid-column: span 3;
+    .galleryItem4,
+    .galleryItem5,
+    .galleryItem6 {
+        grid-column: span 2;
     }
-
-    .galleryItem4{
-        grid-column: span 3;
-    }
-    .galleryItem5{
-        grid-column: span 3;
-    }
-    .galleryItem6{
-        grid-column: span 6;
-    }
-    .galleryItem7{
-        grid-column: span 6;
+    .galleryItem7 {
+        grid-column: span 4;
     }
 
 .img {
@@ -128,18 +106,48 @@ h3 {
 
 @media (min-width: 48em) {
     .gallery {
-        grid-column: span 1;
-    }
-}
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+        }
 
-@media (min-width: 48em) {
-    .gallery {
-        grid-column: span 2;
-    }
-}
+        .galleryText1 {
+            margin-left: 2em;
+            grid-column: span 12;
+        }
+        .galleryText2 {
+            margin-left: 2em;
+            grid-column: span 6;
+        }
 
-@media (min-width: 48em) {
-.gallery {
-    grid-column: span 12;
-    }
+        .galleryText3 {
+            margin-left: 2em;
+            grid-column: span 6;
+        }
+        .galleryItem1 {
+            margin: 2em;
+            grid-column: span 12;
+        }
+
+        .galleryItem2 {
+            grid-column: span 3;
+        }
+
+        .galleryItem3{
+            grid-column: span 3;
+        }
+
+        .galleryItem4{
+            grid-column: span 3;
+        }
+        .galleryItem5{
+            grid-column: span 3;
+        }
+        .galleryItem6{
+            grid-column: span 6;
+        }
+        .galleryItem7{
+            grid-column: span 6;
+        }
 }
