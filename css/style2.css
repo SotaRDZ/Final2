@@ -71,7 +71,7 @@ header {
 
 .topnav{
     margin-right: -15em;
-    margin-top: 1em;
+    margin-top: 1.5em;
 
 
 }
@@ -91,17 +91,14 @@ header {
 
 .logo {
     margin-left: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     align-items: center;
     text-decoration: none;
+    margin-left: 3em;
+    align-items: center;
     width: 15%;
 }
 
-.logo-img {
-    margin-left: 3em;
-    align-items: center;
-    height: 30px;
-}
 
 p {
     margin-bottom: 1em;
@@ -128,6 +125,9 @@ h2 {
     font-size: 2em;
     margin-bottom: .3em;
     color: #ff304f;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3em;
 }
 
 h3 {
