@@ -1,35 +1,73 @@
 /* /////////////// */
 
+
+
 .gallery {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-column-gap: 1em;
         grid-row-gap: 1em;
-        width: 100%;
     }
 
-    .galleryText1,
-    .galleryText2,
+
+    .galleryText1 {
+        margin-left: 3em;
+        grid-column: span 12;
+}
+
+.gridSpace {
+    grid-column: span 1;
+
+}
+
+.galleryProfilePic {
+    grid-column: span 2;
+
+}
+
+    .galleryText2 {
+        margin-left: 2em;
+        grid-column: span 4;
+        text-align: justify;
+        text-justify: inter-word;
+}
+
     .galleryText3 {
         margin-left: 2em;
         grid-column: span 4;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .galleryItem1 {
+        margin: 2em;
+        grid-column: span 12;
     }
 
-
-    .galleryItem4,
-    .galleryItem5,
-    .galleryItem6 {
-        grid-column: span 2;
+    .galleryItem2 {
+        grid-column: span 3;
     }
-    .galleryItem7 {
-        grid-column: span 4;
+
+    .galleryItem3{
+        grid-column: span 3;
+    }
+
+    .galleryItem4{
+        grid-column: span 3;
+    }
+    .galleryItem5{
+        grid-column: span 3;
+    }
+    .galleryItem6{
+        grid-column: span 6;
+    }
+    .galleryItem7{
+        grid-column: span 6;
     }
 
 .img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 /* /////////////// */
@@ -42,38 +80,35 @@ header {
 }
 
 .topnav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-top: 2em;
+
+
 }
 
 .topnav a {
+    float: right;
     color: #ff5972;
-    text-align: center;
-    padding: 14px 10px;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
+    align-items: right;
+    text-transform: uppercase;
 }
+
+.navBar {
+    grid-column: span 5;
+}
+
 
 .logo {
-    margin-left: 1em;
-    align-items: center;
-    text-decoration: none;
-    width: 100%;
-    float: none;
-    margin: 0 auto;
-}
-
-.logo-img {
-    margin-left: 3em;
-    height: 30px;
-    max-width: 100%;
+    grid-column: span 3;
 }
 
 p {
-    margin-top: 0;
     margin-bottom: 1em;
     line-height: 1.5em;
+    font-size: 15px;
 }
 
 body {
@@ -94,8 +129,13 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: .3em;
+    margin-bottom: .5em;
+    margin-top: 3em;
     color: #ff304f;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 500;
 }
 
 h3 {
@@ -107,75 +147,88 @@ h3 {
     margin-left: 1em;
 }
 
+h4 {
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: .3em;
+    color: #ff5972;
+    margin-left: 1em;
+    margin-bottom: -.5em;
+    text-align: center;
+    font-weight: 300;
+}
 
 /* /////////////// */
 
 
-@media (min-width: 48em) {
-
-
-    .topnav a {
-        display: flex;
-        float: right;
-        color: #ff5972;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-
-    .logo {
-        margin-left: 1em;
-        align-items: center;
-        text-decoration: none;
-        width: 25%;
-    }
-
-
-    .gallery {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-column-gap: 1em;
-            grid-row-gap: 1em;
-        }
-
-        .galleryText1 {
-            margin-left: 2em;
-            grid-column: span 12;
-        }
-        .galleryText2 {
-            margin-left: 2em;
-            grid-column: span 6;
-        }
-
-        .galleryText3 {
-            margin-left: 2em;
-            grid-column: span 6;
-        }
-        .galleryItem1 {
-            margin: 2em;
-            grid-column: span 12;
-        }
-
-        .galleryItem2 {
-            grid-column: span 3;
-        }
-
-        .galleryItem3{
-            grid-column: span 3;
-        }
-
-        .galleryItem4{
-            grid-column: span 3;
-        }
-        .galleryItem5{
-            grid-column: span 3;
-        }
-        .galleryItem6{
-            grid-column: span 6;
-        }
-        .galleryItem7{
-            grid-column: span 6;
-        }
+.galleryBlock{
+    grid-column: span 2;
+    padding: 4em;
+    background-color: #002651;
+    margin-bottom: 4em;
+    padding: 1em;
+    text-align: center;
+    margin-top: 3em;
 }
+
+.galleryBlock2{
+    grid-column: span 4;
+    padding: 4em;
+    background-color: #002651;
+    margin-bottom: 4em;
+    padding: 1em;
+    text-align: center;
+    margin-top: 3em;
+
+}
+
+.contactUs{
+    color: aliceblue;
+}
+
+.icon2{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: -1em;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* /////////////// */
+
+
+.footer {
+    background-color: #ff304f; 
+    grid-column: span 12;        
+}
+
+h5{
+    text-align: center;
+    font-size: .75em;
+    color: aliceblue;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
+
+/* /////////////// */
+
+
