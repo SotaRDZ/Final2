@@ -234,14 +234,3 @@ h5{
 
 @media only screen and (max-width: 500px) {
     /* For mobile phones: */
-
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-column-gap: 1em;
-        grid-row-gap: 1em;
-    }
-
-
-    }
