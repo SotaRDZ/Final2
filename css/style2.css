@@ -98,11 +98,15 @@ header {
 
 .navBar {
     grid-column: span 5;
+    margin-top: -1em; 
+
 }
 
 
 .logo {
     grid-column: span 3;
+    display: block;
+    margin-top: -2em; 
 }
 
 p {
