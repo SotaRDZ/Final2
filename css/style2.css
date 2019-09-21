@@ -235,4 +235,73 @@ h5{
 
 /* /////////////// */
 
+@media (max-width: 38em) {
 
+
+    .gallery .gridSpace {
+        display: none;
+    }
+
+
+    .logo {
+        width: 100%;
+        grid-column: span 4;
+    }
+
+    .logo img{
+        max-width: 100%;
+        margin: 0 auto 1em;
+        display: block;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topnav a {
+        padding: 0 10px;
+    }
+
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    .galleryText1 {
+        margin-left: 0;
+        grid-column: span 4;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .galleryItem1,
+    .galleryItem2,
+    .galleryItem3,
+    .galleryItem4,
+    .galleryItem5,
+    .galleryItem6,
+    .galleryItem7 {
+        margin-left: 0;
+        grid-column: span 2;
+    }
+
+
+    .galleryText2,
+    .galleryText3 {
+        margin-left: 0;
+        grid-column: span 4;
+    }
+
+    .galleryBlock,
+    .galleryBlock2 {
+        grid-column: span 2;
+        margin: 0;
+        
+    }
+}
